@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walcome to My Restaurant! </title>
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script&display=swap" rel="stylesheet">
+  <link href="./style.css" type="text/css" rel="stylesheet" media="screen"/>
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5d8f6ad0531a6e00192053c7&product=inline-follow-buttons" async="async"></script>
+  <script> var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}</script>
+
+</head>
+<body>
+  <div class= "header">
+    <h2 >Fish & Shrimp Al <img src="image/logo.png" style="width:70px;height:70px;">akhri </h2>
+    </div>
+    <div class='info'>
+     <ul>
+      <li><a href="menu.html" title=" Chose from our menu">Menu!</a></li>
+      <li><a href="aboutus.html" title=" Read all about our busness">About Us!</a></li>
+      <li><a href= "location.html" title="Find our location"> Location</a></li>
+      <li><a href="contactus.html" title="Our contact information">Contact Us!</a></li>
+      <li><a href="arabic.html" title="الموقع بالعربي">عربي</a></li>
+
+    </ul> 
+  </div>
+  <div class="intro">
+      <div class="reservation"> <strong>MAKE A RESERVATION!</strong><br>I thought we can put a contact <br> here for advance reservations<br> Something like..you don't want to wait, call us and make a reservation in advacne.
+        <p>+966545523433</p>
+
+      </div>
+       </div>
+  <div class="introimg">
+       </div> 
+<div class="background"> 
+ <div class="more"> <strong>RECOMMINDATIONS</strong>
+  <p>Give us your recommindations<br> we would love to here what you would like</p></div>    
+  <!-- Slideshow container -->
+ <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+   <div class="mySlides fade">
+     <div class="numbertext">1 / 5</div>
+     <img src="image/fish.png" style="width:100%">
+     <div class="text">Fried fish</div>
+   </div>
+
+   <div class="mySlides fade">
+     <div class="numbertext">2 / 5</div>
+     <img src="image/fishrice.png" style="width:100%">
+     <div class="text">Tahini with fish</div>
+   </div>
+
+   <div class="mySlides fade">
+     <div class="numbertext">3 / 5</div>
+     <img src="image/rice.png" style="width:100%">
+     <div class="text">Rice</div>
+   </div>
+   <div class="mySlides fade">
+     <div class="numbertext">4 / 5</div>
+     <img src="image/shrimp.png" style="width:100%">
+     <div class="text">Fried shrimp</div>
+   </div>
+   <div class="mySlides fade">
+     <div class="numbertext">5 / 5</div>
+     <img src="image/hindy.png" style="width:100%">
+     <div class="text">Tamarind with fish</div>
+   </div>
+  <!-- Next and previous buttons -->
+   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ </div>
+</div>
+  
+  <footer>
+    <h3>You can add your experience here!<br>
+      <div class="sharethis-inline-follow-buttons"></div></h3>
+    <h6>Copyright&copy; Abazaid 2020</h6>
+  </footer> 
+</body>
+</html>
